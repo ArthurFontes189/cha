@@ -122,12 +122,11 @@ function insertInitialProducts() {
         
         // Sala
         { id: 51, name: 'Televisão', icon: '📺', description: 'TV', maxQuantity: 1, category: 'sala' },
-        { id: 53, name: 'Ventilador', icon: '💨', description: 'Ventilador de coluna', maxQuantity: 3, category: 'sala' },
+        { id: 53, name: 'Ventilador', icon: '💨', description: 'Ventilador de coluna', maxQuantity: 1, category: 'sala' },
         { id: 68, name: 'Almofadas', icon: '🛋️', description: 'Kit com almofadas decorativas', maxQuantity: 1, category: 'outros' },
         { id: 69, name: 'Cortinas', icon: '🪟', description: 'Cortinas para sala ou quarto', maxQuantity: 3, category: 'outros' },
 
         // Outros
-        { id: 52, name: 'Aspirador', icon: '🧹', description: 'Aspirador de pó', maxQuantity: 1, category: 'outros' },
         { id: 61, name: 'Cabideiro', icon: '🪝', description: 'Cabideiro de parede ou chão', maxQuantity: 1, category: 'outros' },
         { id: 62, name: 'Espelho', icon: '🪞', description: 'Espelho decorativo', maxQuantity: 1, category: 'outros' },
         { id: 70, name: 'PIX - Contribuição', icon: '💰', description: 'Prefiro contribuir com PIX', maxQuantity: 999, category: 'outros' },
@@ -349,4 +348,5 @@ app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
     console.log('Banco de dados: cha-panela.db');
 });
+
 
