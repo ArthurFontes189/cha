@@ -41,8 +41,50 @@
             </div>
 
             <div class="admin-controls">
+                <button onclick="showAddProductForm()" class="btn-add">➕ Adicionar Novo Item</button>
                 <button onclick="exportData()" class="btn-export">📥 Exportar Dados</button>
                 <button onclick="clearAllData()" class="btn-danger">🗑️ Limpar Tudo</button>
+            </div>
+
+            <div id="addProductSection" class="add-product-section" style="display: none;">
+                <h2>Adicionar Novo Produto</h2>
+                <form id="addProductForm" class="product-form">
+                    <div class="form-group">
+                        <label for="productName">Nome do Produto:</label>
+                        <input type="text" id="productName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productIcon">Emoji/Ícone:</label>
+                        <input type="text" id="productIcon" placeholder="Ex: 🍽️" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productDescription">Descrição:</label>
+                        <textarea id="productDescription" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productQuantity">Quantidade Máxima:</label>
+                        <input type="number" id="productQuantity" min="1" value="1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productCategory">Categoria:</label>
+                        <select id="productCategory" required>
+                            <option value="cozinha">🍽️ Cozinha</option>
+                            <option value="banheiro">🚿 Banheiro</option>
+                            <option value="quarto">🛏️ Quarto</option>
+                            <option value="sala">🛋️ Sala</option>
+                            <option value="outros">🎁 Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Adicionar Produto</button>
+                        <button type="button" onclick="hideAddProductForm()" class="btn-secondary">Cancelar</button>
+                    </div>
+                </form>
             </div>
 
             <div id="giftsList" class="gifts-list"></div>

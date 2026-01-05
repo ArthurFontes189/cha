@@ -209,6 +209,54 @@ async function clearAllData() {
     }
 }
 
+// Mostrar formulário de adicionar produto
+function showAddProductForm() {
+    document.getElementById('addProductSection').style.display = 'block';
+    document.getElementById('addProductSection').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Esconder formulário de adicionar produto
+function hideAddProductForm() {
+    document.getElementById('addProductSection').style.display = 'none';
+    document.getElementById('addProductForm').reset();
+}
+
+// Adicionar novo produto
+document.getElementById('addProductForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const productData = {
+        name: document.getElementById('productName').value,
+        icon: document.getElementById('productIcon').value,
+        description: document.getElementById('productDescription').value,
+        maxQuantity: parseInt(document.getElementById('productQuantity').value),
+        category: document.getElementById('productCategory').value
+    };
+
+    try {
+        const response = await fetch(`${API_URL}/products`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(productData)
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert('✅ Produto adicionado com sucesso!');
+            hideAddProductForm();
+            loadAdminData();
+        } else {
+            alert('❌ Erro ao adicionar produto: ' + (data.error || 'Erro desconhecido'));
+        }
+    } catch (error) {
+        console.error('Erro ao adicionar produto:', error);
+        alert('❌ Erro ao conectar com o servidor');
+    }
+});
+
 if (sessionStorage.getItem('adminLoggedIn') === 'true') {
     document.getElementById('loginSection').style.display = 'none';
     document.getElementById('adminSection').style.display = 'block';

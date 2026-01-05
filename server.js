@@ -154,6 +154,40 @@ app.get('/api/products', (req, res) => {
     });
 });
 
+// Adicionar novo produto
+app.post('/api/products', (req, res) => {
+    const { name, icon, description, maxQuantity, category } = req.body;
+
+    if (!name || !icon || !description || !maxQuantity || !category) {
+        return res.status(400).json({ error: 'Dados incompletos' });
+    }
+
+    // Buscar o próximo ID disponível
+    db.get('SELECT MAX(id) as maxId FROM products', (err, row) => {
+        if (err) {
+            return res.status(500).json({ error: err.message });
+        }
+
+        const newId = (row.maxId || 0) + 1;
+
+        db.run(
+            'INSERT INTO products (id, name, icon, description, max_quantity, category) VALUES (?, ?, ?, ?, ?, ?)',
+            [newId, name, icon, description, maxQuantity, category],
+            function(err) {
+                if (err) {
+                    res.status(500).json({ error: err.message });
+                } else {
+                    res.json({ 
+                        id: newId,
+                        message: 'Produto adicionado com sucesso!',
+                        product: { id: newId, name, icon, description, max_quantity: maxQuantity, category }
+                    });
+                }
+            }
+        );
+    });
+});
+
 // Obter disponibilidade dos produtos
 app.get('/api/products/availability', (req, res) => {
     const query = `
