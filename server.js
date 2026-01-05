@@ -83,7 +83,7 @@ function insertInitialProducts() {
         { id: 10, name: 'Jogo de Copos', icon: '🥤', description: 'Kit ', maxQuantity: 3, category: 'cozinha' },
         { id: 11, name: 'Jogo de Taças', icon: '🍷', description: 'Kit ', maxQuantity: 2, category: 'cozinha' },
         { id: 12, name: 'Jogo de Xícaras', icon: '☕', description: 'Kit ', maxQuantity: 2, category: 'cozinha' },
-        { id: 13, name: 'Jogo de Louça', icon: '🍽️', description: 'Kit', maxQuantity: 3, category: 'cozinha' },
+        { id: 13, name: 'Jogo de pratos', icon: '🍽️', description: 'Kit', maxQuantity: 3, category: 'cozinha' },
         { id: 14, name: 'Jogo de Facas', icon: '🔪', description: 'Kit completo para pão, carne, peixe e legumes', maxQuantity: 1, category: 'cozinha' },
         { id: 15, name: 'Jogo de Formas', icon: '🧁', description: 'formas diversas', maxQuantity:2, category: 'cozinha' },
         { id: 16, name: 'Descanso de Panela', icon: '🟤', description: 'Descanso térmico', maxQuantity: 6, category: 'cozinha' },
@@ -91,43 +91,43 @@ function insertInitialProducts() {
         { id: 18, name: 'Escorredor de Massa', icon: '🍝', description: 'Escorredor grande', maxQuantity: 1, category: 'cozinha' },
         { id: 19, name: 'Forma de Gelo', icon: '🧊', description: 'Kit com 3 formas', maxQuantity: 1, category: 'cozinha' },
         { id: 20, name: 'Potes para Mantimentos', icon: '🫙', description: 'Kit para café, açúcar, farinha e sal', maxQuantity: 3, category: 'cozinha' },
-        { id: 21, name: 'Lixeira', icon: '🗑️', description: 'Lixeira com pedal', maxQuantity: 2, category: 'cozinha' },
+        { id: 21, name: 'Lixeira', icon: '🗑️', description: 'Lixeira com pedal', maxQuantity: 1, category: 'cozinha' },
         { id: 22, name: 'Ralador', icon: '🧀', description: 'Ralador 4 faces', maxQuantity: 1, category: 'cozinha' },
         { id: 23, name: 'pilão de Alho', icon: '🧄', description: 'para pilar alho', maxQuantity: 1, category: 'cozinha' },
         { id: 24, name: 'Amassador de Batata', icon: '🥔', description: 'Amassador manual', maxQuantity: 1, category: 'cozinha' },
-        { id: 25, name: 'Colheres de Silicone', icon: '🥄', description: 'Kit com 5 colheres', maxQuantity: 2, category: 'cozinha' },
-        { id: 26, name: 'Tigelas', icon: '🥣', description: 'Kit com tigelas', maxQuantity: 3, category: 'cozinha' },
+        { id: 25, name: 'Colheres de Silicone', icon: '🥄', description: 'Kit de colheres', maxQuantity: 1, category: 'cozinha' },
+        { id: 26, name: 'Tigelas', icon: '🥣', description: 'Kit com tigelas', maxQuantity: 2, category: 'cozinha' },
         { id: 27, name: 'Canecas', icon: '🍵', description: 'Kit canecas', maxQuantity: 1, category: 'cozinha' },
         { id: 28, name: 'Jarros', icon: '🧃', description: 'Jarro para água/suco', maxQuantity: 2, category: 'cozinha' },
         { id: 29, name: 'Escorredor de Louça', icon: '🧽', description: 'Escorredor com bandeja', maxQuantity: 1, category: 'cozinha' },
         { id: 30, name: 'Tábua de Corte', icon: '🟫', description: 'Tábua de corte em madeira ou plástico', maxQuantity: 3, category: 'cozinha' },
 
         // Banheiro
-        { id: 31, name: 'Toalhas de Banho', icon: '🛁', description: 'Kit com 4 toalhas', maxQuantity: 4, category: 'banheiro' },
-        { id: 32, name: 'Toalhas de Rosto', icon: '🧖', description: 'Kit com 6 toalhas', maxQuantity: 4, category: 'banheiro' },
-        { id: 33, name: 'Tapetes', icon: '🪤', description: 'Tapete antiderrapante', maxQuantity: 3, category: 'banheiro' },
-        { id: 34, name: 'Lixeira para Banheiro', icon: '🗑️', description: 'Lixeira com tampa', maxQuantity: 2, category: 'banheiro' },
-        { id: 35, name: 'Saboneteiras', icon: '🧼', description: 'Saboneteira de parede', maxQuantity: 3, category: 'banheiro' },
-        { id: 36, name: 'Kit Porta Coisas', icon: '🪥', description: 'Porta escova, pasta e sabonete', maxQuantity: 3, category: 'banheiro' },
+        { id: 31, name: 'Toalhas de Banho', icon: '🛁', description: 'Kit toalhas', maxQuantity: 2, category: 'banheiro' },
+        { id: 32, name: 'Toalhas de Rosto', icon: '🧖', description: 'Kit com toalhas', maxQuantity: 2, category: 'banheiro' },
+        { id: 33, name: 'Tapetes', icon: '🪤', description: 'Tapete antiderrapante', maxQuantity: 2, category: 'banheiro' },
+        { id: 34, name: 'Lixeira para Banheiro', icon: '🗑️', description: 'Lixeira com tampa', maxQuantity: 1, category: 'banheiro' },
+        { id: 35, name: 'Saboneteira', icon: '🧼', description: 'Saboneteira de parede', maxQuantity: 1, category: 'banheiro' },
+        { id: 36, name: 'Kit Porta Coisas', icon: '🪥', description: 'Porta escova, pasta e sabonete', maxQuantity: 1, category: 'banheiro' },
         
         // Quarto
         { id: 41, name: 'Lençóis King Size', icon: '🛏️', description: 'Jogo de lençol king size', maxQuantity: 4, category: 'quarto' },
-        { id: 42, name: 'Edredom King Size', icon: '🛌', description: 'Edredom king size', maxQuantity: 1, category: 'quarto' },
-        { id: 43, name: 'Cobre Leito King Size', icon: '🪢', description: 'Cobre leito king size', maxQuantity: 1, category: 'quarto' },
-        { id: 44, name: 'Colcha King Size', icon: '🧶', description: 'Colcha king size', maxQuantity: 1, category: 'quarto' },
-        { id: 45, name: 'Travesseiros', icon: '🛋️', description: 'Par de travesseiros', maxQuantity: 4, category: 'quarto' },
-        { id: 46, name: 'Fronhas', icon: '🧵', description: 'Kit com 4 fronhas', maxQuantity: 4, category: 'quarto' },
-        { id: 47, name: 'Protetor de Colchão King', icon: '🪡', description: 'Protetor impermeável king size', maxQuantity: 1, category: 'quarto' },
-        { id: 68, name: 'Almofadas', icon: '🛋️', description: 'Kit com almofadas decorativas', maxQuantity: 3, category: 'outros' },
+        { id: 42, name: 'Edredom King Size', icon: '🛌', description: 'Edredom king size', maxQuantity: 2, category: 'quarto' },
+        { id: 43, name: 'Cobre Leito King Size', icon: '🪢', description: 'Cobre leito king size', maxQuantity: 2, category: 'quarto' },
+        { id: 44, name: 'Colcha King Size', icon: '🧶', description: 'Colcha king size', maxQuantity: 2, category: 'quarto' },
+        { id: 45, name: 'Travesseiros', icon: '🛋️', description: 'Par de travesseiros', maxQuantity: 2, category: 'quarto' },
+        { id: 46, name: 'Fronhas', icon: '🧵', description: 'Kit com fronhas', maxQuantity: 2, category: 'quarto' },
+        { id: 47, name: 'Protetor de Colchão King', icon: '🪡', description: 'Protetor impermeável king size', maxQuantity: 2, category: 'quarto' },
         
         
         // Sala
         { id: 51, name: 'Televisão', icon: '📺', description: 'TV', maxQuantity: 1, category: 'sala' },
-        { id: 52, name: 'Aspirador', icon: '🧹', description: 'Aspirador de pó vertical', maxQuantity: 1, category: 'sala' },
         { id: 53, name: 'Ventilador', icon: '💨', description: 'Ventilador de coluna', maxQuantity: 3, category: 'sala' },
+        { id: 68, name: 'Almofadas', icon: '🛋️', description: 'Kit com almofadas decorativas', maxQuantity: 1, category: 'outros' },
         { id: 69, name: 'Cortinas', icon: '🪟', description: 'Cortinas para sala ou quarto', maxQuantity: 3, category: 'outros' },
 
         // Outros
+        { id: 52, name: 'Aspirador', icon: '🧹', description: 'Aspirador de pó', maxQuantity: 1, category: 'outros' },
         { id: 61, name: 'Cabideiro', icon: '🪝', description: 'Cabideiro de parede ou chão', maxQuantity: 1, category: 'outros' },
         { id: 62, name: 'Espelho', icon: '🪞', description: 'Espelho decorativo', maxQuantity: 1, category: 'outros' },
         { id: 70, name: 'PIX - Contribuição', icon: '💰', description: 'Prefiro contribuir com PIX', maxQuantity: 999, category: 'outros' },
@@ -349,3 +349,4 @@ app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
     console.log('Banco de dados: cha-panela.db');
 });
+
