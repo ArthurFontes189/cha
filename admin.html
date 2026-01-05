@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Chá de Panela</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div id="loginSection" class="login-container">
+        <div class="login-box">
+            <h1>🔐 Área Administrativa</h1>
+            <input type="password" id="adminPassword" placeholder="Digite a senha" />
+            <button onclick="checkPassword()" class="btn-primary">Entrar</button>
+        </div>
+    </div>
+
+    <div id="adminSection" style="display: none;">
+        <header>
+            <div class="container">
+                <h1>📋 Administração do Chá de Panela</h1>
+                <button onclick="logout()" class="btn-logout">Sair</button>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total de Itens</h3>
+                    <p class="stat-number" id="totalItems">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Itens Escolhidos</h3>
+                    <p class="stat-number" id="selectedItems">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Itens Disponíveis</h3>
+                    <p class="stat-number" id="availableItems">0</p>
+                </div>
+            </div>
+
+            <div class="admin-controls">
+                <button onclick="exportData()" class="btn-export">📥 Exportar Dados</button>
+                <button onclick="clearAllData()" class="btn-danger">🗑️ Limpar Tudo</button>
+            </div>
+
+            <div id="giftsList" class="gifts-list"></div>
+        </main>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Panela - Arthur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>💍 Chá de Panela</h1>
+            <p>Escolha um presente para nos ajudar a montar nosso lar!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tabs-container">
+            <div class="tabs" id="tabs">
+                <!-- Abas serão inseridas via JavaScript -->
+            </div>
+            <div class="tab-content" id="tabContent">
+                <!-- Conteúdo das abas será inserido via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #999; font-size: 0.9rem;">
+        <a href="admin.html" style="color: #666; text-decoration: none;">🔐 Área Administrativa</a>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p class="modal-availability" id="modalAvailability"></p>
+            <input type="text" id="guestName" placeholder="Seu nome" maxlength="50">
+            <button id="confirmBtn" class="btn-primary">Confirmar Presente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
